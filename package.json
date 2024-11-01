@@ -1,0 +1,6 @@
+{
+  "name": "ghost-cloudflare-images-storage",
+  "dependencies": {
+    "ghost-storage-base": "^1.0.0"
+  }
+}

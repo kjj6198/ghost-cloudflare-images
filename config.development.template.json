@@ -1,0 +1,25 @@
+{
+  "url": "http://localhost:2368",
+  "server": {
+    "port": 2368,
+    "host": "::"
+  },
+  "mail": {
+    "transport": "Direct"
+  },
+  "logging": {
+    "transports": ["file", "stdout"]
+  },
+  "process": "systemd",
+  "paths": {
+    "contentPath": "/var/lib/ghost/content"
+  },
+  "storage": {
+    "active": "ghost-cloudflare-images-storage",
+    "ghost-cloudflare-images-storage": {
+      "domain": "$IMAGE_DOMAIN",
+      "apiToken": "$CLOUDFLARE_IMAGE_API_TOKEN",
+      "apiEndpoint": "$CLOUDFLARE_IMAGE_API_ENDPOINT"
+    }
+  }
+}
